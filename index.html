@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trimly</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .active::after,
+    .nav-link:hover::after {
+      content: "";
+      position: absolute;
+      bottom: 0
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #6C63FF;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #a29bfe;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6C63FF;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-[#2C2C2C] overflow-x-hidden leading-relaxed">
+
+  <!-- Navbar -->
+  <header class="shadow sticky top-0 bg-white z-50">
+    <div class="container mx-auto p-4">
+      <div class="flex justify-between items-center">
+        <!-- Left: Logo -->
+        <a href="#" class="flex items-center gap-4">
+          <i class="fas fa-scissors text-[#6C63FF] text-2xl"></i>
+          <span class="font-[Montserrat] text-[1.8rem] font-extrabold text-[#1a1a2e] tracking-wide">Trimly</span>
+        </a>
+
+        <!-- Center: Links -->
+        <nav class="hidden md:flex gap-5 items-center">
+          <a href="#"
+            class="nav-link relative text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 py-2 transition-all duration-300">
+            <i class="fas fa-home"></i> Home
+          </a>
+          <a href="./booknow.html"
+            class="nav-link active relative text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 py-2 transition-all duration-300">
+            <i class="fas fa-calendar-check"></i> Book Now
+          </a>
+          <a href="#"
+            class="nav-link relative text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 py-2 transition-all duration-300">
+            <i class="fas fa-chart-line"></i> Dashboard
+          </a>
+        </nav>
+
+        <!-- Right: Login/Register -->
+        <div class="flex items-center gap-4">
+          <a href="#"
+            class="text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 transition-all duration-300">
+            <i class="fas fa-user"></i> Login
+          </a>
+          <a href="#"
+            class="text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] transition-all duration-300">
+            Register
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mx-auto px-6 py-12">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <h1 class="text-3xl md:text-3xl lg:text-4xl font-bold text-navy mb-4">
+            Book Your Appointment
+          </h1>
+          <p class="text-xl md:text-2xl lg:text-2xl text-gray-600">
+            Follow these simple steps to schedule your perfect haircut
+          </p>
+        </div>
+
+        <!-- Progress Step -->
+        <div class="flex justify-center items-center  gap-3 space-x-4">
+
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 md:w-12 lg:w-14  rounded-full bg-blue-500 text-white flex items-center justify-center">1
+            </div>
+
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 md:w-12 lg:w-14 rounded-full bg-gray-300 text-black flex items-center justify-center">
+              2</div>
+
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 md:w-12 lg:w-14 rounded-full bg-gray-300 text-black flex items-center justify-center">
+              3</div>
+
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 md:w-12 lg:w-14 rounded-full bg-gray-300 text-black flex items-center justify-center">
+              4</div>
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 md:w-12 lg:w-14  rounded-full bg-gray-300 text-black flex items-center justify-center">
+              5</div>
+
+          </div>
+        </div>
+
+        <div class="container pt-10 shadow-xl border-0 justify-center p-8 ">
+          <div class="container  pt-10  justify-center p-8 ">
+            <h1 class="text-xl md:text-2xl text-center lg:text-3xl ">Choose Your services</h1>
+            <h2 class="text-l md:text-xl text-center lg:text-2xl text-gray-600">select the services that fits your needs
+            </h2>
+            <div class="mt-4">
+
+
+              <div
+                class="mb-4 p-4 rounded-lg shadow-sm border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 flex justify-between items-center">
+                <div>
+                  <h2 class="md:text-lg font-semibold text-gray-900">Classic Cut</h2>
+                  <div class="text-gray-500 flex items-center gap-1">
+                    <i class="fas fa-clock"></i>
+                    30 min
+                  </div>
+                </div>
+                <span class="text-xl font-bold md:text-2xl text-green-500">$35</span>
+              </div>
+
+
+
+              <div
+                class=" mb-4 p-4 rounded-lg shadow-sm border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 flex justify-between items-center">
+                <div>
+                  <h2 class="md:text-lg font-semibold text-gray-900">Classic Cut</h2>
+                  <div class="text-gray-500 flex items-center gap-1">
+                    <i class="fas fa-clock"></i>
+                    30 min
+                  </div>
+                </div>
+                <span class="text-xl font-bold md:text-2xl text-green-500">$35</span>
+              </div>
+
+
+              <div
+                class=" mb-4 p-4 rounded-lg shadow-sm border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 flex justify-between items-center">
+                <div>
+                  <h2 class="md:text-lg font-semibold text-gray-900">Classic Cut</h2>
+                  <div class="text-gray-500 flex items-center gap-1">
+                    <i class="fas fa-clock"></i>
+                    30 min
+                  </div>
+                </div>
+                <span class="text-xl md:text-2xl font-bold text-green-500">$35</span>
+              </div>
+
+
+              <div
+                class="mb-4 p-4 rounded-lg shadow-sm border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 flex justify-between items-center">
+                <div>
+                  <h2 class="md:text-lg font-semibold text-gray-900">Classic Cut</h2>
+                  <div class="text-gray-500 flex items-center gap-1">
+                    <i class="fas fa-clock"></i>
+                    30 min
+                  </div>
+                </div>
+                <span class="text-xl font-bold md:text-2xl text-green-500">$35</span>
+              </div>
+
+            </div>
+
+            <div class="flex justify-between mt-8 pt-6 border-t">
+              <button class="border md:text-lg px-4 text-gray-400 bg-gray-200 rounded-lg  shadow " disabled>Previous</button>
+              <a href="step2.html">
+                <button class="bg-blue-400 border hover:border-black hover:shadow md:text-lg px-4 rounded-lg transition">Next</button>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo">
+            <i class="fas fa-scissors"></i>
+            <span>Trimly</span>
+          </div>
+          <p>Your premium haircare experience. Book appointments with top barbers instantly with our advanced platform.
+          </p>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> hello@trimly.com</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Barber St, City</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Haircut & Styling</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Beard Trimming</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Premium Packages</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2023 Trimly. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
