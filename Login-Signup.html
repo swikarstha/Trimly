@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white min-h-screen flex items-center justify-center px-4">
+    <div
+      class="w-full max-w-md bg-white border border-gray-200 shadow-lg rounded-xl p-6 sm:p-8 md:p-10"
+    >
+      <div class="flex flex-col items-center">
+        <!-- Logo -->
+        <div class="bg-black rounded-full p-3 mb-4">
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M20 12H4"
+            ></path>
+          </svg>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-1 text-center">Welcome Back</h2>
+        <p class="text-gray-500 mb-6 text-sm text-center">
+          Sign in to your account
+        </p>
+
+        <!-- Toggle Buttons -->
+        <div class="flex gap-2 w-full mb-6">
+          <button
+            id="customerBtn"
+            class="w-1/2 py-2 border rounded-lg bg-black text-white font-medium"
+          >
+            Customer
+          </button>
+          <button
+            id="barberBtn"
+            class="w-1/2 py-2 border rounded-lg text-gray-700"
+          >
+            Barber
+          </button>
+        </div>
+
+        <!-- Email -->
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+        />
+
+        <!-- Password -->
+        <input
+          type="password"
+          placeholder="Enter your password"
+          class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+        />
+
+        <!-- Remember + Forgot -->
+        <div class="w-full flex justify-between items-center text-sm mb-4">
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="accent-black" />
+            Remember me
+          </label>
+          <a href="#" class="text-blue-500 hover:underline">Forgot password?</a>
+        </div>
+
+        <!-- Sign In -->
+        <button
+          class="w-full bg-black text-white py-2 rounded-lg mb-4 hover:opacity-90"
+        >
+          Sign In
+        </button>
+
+        <!-- Divider -->
+        <div
+          class="flex items-center justify-center mb-4 text-gray-400 text-sm"
+        >
+          <span class="border-t w-full mr-2"></span>
+          Or continue with
+          <span class="border-t w-full ml-2"></span>
+        </div>
+
+        <!-- Social Logins -->
+        <div class="w-full flex flex-col gap-2">
+          <button
+            class="flex items-center justify-center gap-3 border py-2 rounded-lg hover:bg-gray-50 text-sm"
+          >
+            <span class="text-lg font-medium">G</span> Continue with Google
+          </button>
+          <button
+            class="flex items-center justify-center gap-3 border py-2 rounded-lg hover:bg-gray-50 text-sm"
+          >
+            <span class="text-lg font-medium">f</span> Continue with Facebook
+          </button>
+        </div>
+
+        <!-- Sign up -->
+        <p class="text-sm text-gray-500 mt-6 text-center">
+          Don’t have an account?
+          <a href="#" class="text-blue-500 hover:underline">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- JavaScript for Role Switching -->
+    <script>
+      const customerBtn = document.getElementById("customerBtn");
+      const barberBtn = document.getElementById("barberBtn");
+
+      customerBtn.addEventListener("click", () => {
+        customerBtn.classList.add("bg-black", "text-white");
+        customerBtn.classList.remove("text-gray-700");
+        barberBtn.classList.remove("bg-black", "text-white");
+        barberBtn.classList.add("text-gray-700");
+        console.log("Role: Customer");
+      });
+
+      barberBtn.addEventListener("click", () => {
+        barberBtn.classList.add("bg-black", "text-white");
+        barberBtn.classList.remove("text-gray-700");
+        customerBtn.classList.remove("bg-black", "text-white");
+        customerBtn.classList.add("text-gray-700");
+        console.log("Role: Barber");
+      });
+    </script>
+  </body>
+</html>
