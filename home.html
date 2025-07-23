@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trimly</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/main.js"></script>
+  </head>
+
+  <body
+    class="font-['Roboto'] bg-white text-[#2C2C2C] overflow-x-hidden leading-relaxed"
+  >
+    <!-- Navbar -->
+    <header class="shadow sticky top-0 bg-white z-50">
+      <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="flex items-center gap-4">
+            <i class="fas fa-scissors text-[#6C63FF] text-2xl"></i>
+            <span
+              class="font-[Montserrat] text-[1.8rem] font-extrabold text-[#1a1a2e] tracking-wide"
+              >Trimly</span
+            >
+          </a>
+
+          <nav class="hidden md:flex gap-5 items-center">
+            <a
+              href="#"
+              class="nav-link relative text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 py-2 transition-all duration-300"
+            >
+              <i class="fas fa-home"></i> Home
+            </a>
+            <a
+              href="./book-now.html"
+              class="nav-link active relative text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 py-2 transition-all duration-300"
+            >
+              <i class="fas fa-calendar-check"></i> Book Now
+            </a>
+            <a
+              href="#"
+              class="nav-link relative text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 py-2 transition-all duration-300"
+            >
+              <i class="fas fa-chart-line"></i> Dashboard
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a
+              href="Login-Signup.html"
+              class="text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] flex items-center gap-2 transition-all duration-300"
+            >
+              <i class="fas fa-user"></i> Login
+            </a>
+            <a
+              href="Login-Signup.html"
+              class="text-[#1a1a2e] hover:text-[#6C63FF] font-medium text-[1.05rem] transition-all duration-300"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="bg-pink-50 py-16">
+        <div class="max-w-6xl mx-auto text-center px-4">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Your Perfect Haircut,
+            <span class="text-pink-600">Just a Click Away</span>
+          </h1>
+          <p class="text-lg mb-6">
+            Experience haircare like never before — with real-time booking,
+            curated barber profiles, and smart recommendations, Trimly brings
+            the salon to your fingertips.
+          </p>
+          <div class="space-x-4">
+            <a href="#" class="bg-pink-600 text-white px-6 py-3 rounded"
+              >Book Now</a
+            >
+            <a
+              href="#"
+              class="border border-pink-600 text-pink-600 px-6 py-3 rounded"
+              >View Services</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-center mb-10">
+            Why Choose Trimly?
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Feature Cards -->
+            <div class="text-center p-4 shadow-md rounded">
+              <div class="text-pink-600 text-3xl mb-2">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Smart Scheduling</h3>
+              <p>
+                Book anytime with intelligent slot matching that suits your day.
+              </p>
+            </div>
+
+            <div class="text-center p-4 shadow-md rounded">
+              <div class="text-pink-600 text-3xl mb-2">
+                <i class="fas fa-cut"></i>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Expert Barbers</h3>
+              <p>
+                Connect with top-rated, reviewed professionals in your area.
+              </p>
+            </div>
+
+            <div class="text-center p-4 shadow-md rounded">
+              <div class="text-pink-600 text-3xl mb-2">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Personal Dashboard</h3>
+              <p>
+                Manage bookings, view history, and track upcoming appointments.
+              </p>
+            </div>
+
+            <div class="text-center p-4 shadow-md rounded">
+              <div class="text-pink-600 text-3xl mb-2">
+                <i class="fas fa-redo"></i>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Instant Rebooking</h3>
+              <p>
+                Rebook your previous appointment with one click. Fast and
+                hassle-free.
+              </p>
+            </div>
+
+            <div class="text-center p-4 shadow-md rounded">
+              <div class="text-pink-600 text-3xl mb-2">
+                <i class="fas fa-cog"></i>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Service Customization</h3>
+              <p>
+                Select hairstyle, beard trim, and add-ons before you arrive.
+              </p>
+            </div>
+
+            <div class="text-center p-4 shadow-md rounded">
+              <div class="text-pink-600 text-3xl mb-2">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 class="font-semibold text-xl mb-2">Live Queue Tracker</h3>
+              <p>
+                Track real-time progress of your booking and wait time at the
+                salon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-center mb-10">
+            What Our Clients Say
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded shadow-md">
+              <div class="text-yellow-500 mb-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="mb-4">
+                Fantastic experience! Booking was easy and my barber was
+                professional. I've recommended Trimly to all my friends.
+              </p>
+              <div class="font-semibold">
+                Aayush K.
+                <span class="block text-sm font-normal">Regular Client</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow-md">
+              <div class="text-yellow-500 mb-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="mb-4">
+                I love the convenience. No queues, no confusion — just smart
+                service and quality haircuts. The app is amazing!
+              </p>
+              <div class="font-semibold">
+                Sneha R.
+                <span class="block text-sm font-normal">New Client</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow-md">
+              <div class="text-yellow-500 mb-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="mb-4">
+                The dashboard is super helpful. I can rebook with my favorite
+                barber in seconds. Best grooming experience ever!
+              </p>
+              <div class="font-semibold">
+                Rohit M.
+                <span class="block text-sm font-normal">VIP Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+          <div>
+            <div class="flex items-center gap-2 text-xl font-semibold mb-4">
+              <i class="fas fa-scissors text-blue-400"></i>
+              <span>Trimly</span>
+            </div>
+            <p class="text-gray-400 mb-5 leading-relaxed">
+              Your premium haircare experience. Book appointments with top
+              barbers instantly with our advanced platform.
+            </p>
+            <div class="space-y-2 text-gray-400 text-sm">
+              <p class="flex items-center gap-2">
+                <i class="fas fa-envelope text-blue-400"></i> hello@trimly.com
+              </p>
+              <p class="flex items-center gap-2">
+                <i class="fas fa-phone text-blue-400"></i> (555) 123-4567
+              </p>
+              <p class="flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-blue-400"></i> 123 Barber
+                St, City
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="text-lg font-semibold mb-6 relative pb-3 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-[3px] after:bg-blue-400"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                >
+                  <i class="fas fa-chevron-right text-blue-400 w-5"></i> Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                >
+                  <i class="fas fa-chevron-right text-blue-400 w-5"></i> Book
+                  Appointment
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                >
+                  <i class="fas fa-chevron-right text-blue-400 w-5"></i>
+                  Dashboard
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-lg font-semibold mb-6 relative pb-3 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-[3px] after:bg-blue-400"
+            >
+              Our Services
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                >
+                  <i class="fas fa-chevron-right text-blue-400 w-5"></i> Haircut
+                  & Styling
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                >
+                  <i class="fas fa-chevron-right text-blue-400 w-5"></i> Beard
+                  Trimming
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-gray-400 hover:text-white transition"
+                >
+                  <i class="fas fa-chevron-right text-blue-400 w-5"></i> Premium
+                  Packages
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="text-center border-t border-white/10 pt-8 text-gray-400 text-sm"
+        >
+          &copy; 2023 Trimly. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
