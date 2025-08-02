@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white min-h-screen flex items-center justify-center px-4">
+  <body
+    class="bg-white min-h-screen flex items-center justify-center px-4 py-12"
+  >
     <div
       class="w-full max-w-md bg-white border border-gray-200 shadow-lg rounded-xl p-6 sm:p-8 md:p-10"
     >
       <div class="flex flex-col items-center">
-        <!-- Logo -->
         <div class="bg-black rounded-full p-3 mb-4">
           <svg
             class="w-6 h-6 text-white"
@@ -33,8 +34,8 @@
           Sign in to your account
         </p>
 
-        <!-- Toggle Buttons -->
-        <div class="flex gap-2 w-full mb-6">
+        <!-- Role Buttons -->
+        <div class="flex gap-2 w-full mb-4">
           <button
             id="customerBtn"
             class="w-1/2 py-2 border rounded-lg bg-black text-white font-medium"
@@ -49,21 +50,17 @@
           </button>
         </div>
 
-        <!-- Email -->
         <input
           type="email"
           placeholder="Enter your email"
           class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
         />
-
-        <!-- Password -->
         <input
           type="password"
           placeholder="Enter your password"
           class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
         />
 
-        <!-- Remember + Forgot -->
         <div class="w-full flex justify-between items-center text-sm mb-4">
           <label class="flex items-center gap-2">
             <input type="checkbox" class="accent-black" />
@@ -72,14 +69,12 @@
           <a href="#" class="text-blue-500 hover:underline">Forgot password?</a>
         </div>
 
-        <!-- Sign In -->
         <button
           class="w-full bg-black text-white py-2 rounded-lg mb-4 hover:opacity-90"
         >
           Sign In
         </button>
 
-        <!-- Divider -->
         <div
           class="flex items-center justify-center mb-4 text-gray-400 text-sm"
         >
@@ -88,8 +83,7 @@
           <span class="border-t w-full ml-2"></span>
         </div>
 
-        <!-- Social Logins -->
-        <div class="w-full flex flex-col gap-2">
+        <div class="w-full flex flex-col gap-2 mb-4">
           <button
             class="flex items-center justify-center gap-3 border py-2 rounded-lg hover:bg-gray-50 text-sm"
           >
@@ -102,15 +96,15 @@
           </button>
         </div>
 
-        <!-- Sign up -->
-        <p class="text-sm text-gray-500 mt-6 text-center">
+        <p class="text-sm text-gray-500 mt-2 text-center">
           Don’t have an account?
-          <a href="#" class="text-blue-500 hover:underline">Sign up</a>
+          <a href="signup.html" class="text-blue-500 hover:underline"
+            >Sign up</a
+          >
         </p>
       </div>
     </div>
 
-    <!-- JavaScript for Role Switching -->
     <script>
       const customerBtn = document.getElementById("customerBtn");
       const barberBtn = document.getElementById("barberBtn");
